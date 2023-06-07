@@ -1,0 +1,12 @@
+[  
+    {
+        "name": "powerbi-client",
+        "components": [
+            {
+                "filePath": "@blueprintjs/core",
+                "exportName": "ProgressBar",
+                "name": "Progress Bar"
+            }
+        ]
+    }
+]  

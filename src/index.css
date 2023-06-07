@@ -1,11 +1,99 @@
+/* Remove browser defaults */
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
-    'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+ 
+/* Style App.js wrapper */
+.App {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+ 
+/* Tab Container */
+.Tabs {
+  width: 100%;
+  height: 100vh;
+  min-height: 400px;
+  background: #053742;
+  color: #E8F0F2;
+  @media (max-width: 769px) {
+    padding: 2rem 0;
+  }
+}
+ 
+/* Tab Navigation */
+ul.nav {
+  width: 20%;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  border: 1px solid #39A2DB;
+  
+  padding-left: 0px;
+}
+ 
+ul.nav li {
+  width: 50%;
+  
+  list-style: none;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.7s;
+}
+ 
+ul.nav li:first-child {
+  
+}
+ 
+ul.nav li:last-child {
+  
+}
+ 
+ul.nav li:hover {
+  background: rgba(50, 224, 196, 0.15);
+}
+ 
+ul.nav li.active {
+  background: #39A2DB;
+}
+ 
+/* Tab Content Styles */
+.TabContent {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.outlet {
+  height: 80vh;
+}
+
+.reportClass {
+  height: 85vh;
+}
+
+.FirstTab {
+    height: 80vh;
+    width: 100%;
 }
